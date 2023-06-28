@@ -588,18 +588,123 @@ progress {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("../img/promo_bg.png") no-repeat center/cover;
+  background: url("../img/promo_bg.png") no-repeat 50%/cover;
   padding-top: 205px;
 }
+.promo__title {
+  width: 545px;
+  margin-top: 10px;
+}
+.promo__subtitle {
+  position: relative;
+  z-index: 2;
+  padding-left: 10px;
+}
+.promo__subtitle::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.promo__btns {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+.promo__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.promo__link:hover {
+  color: #000;
+}
 
-.title_fz48 {
-  font-size: 48px;
-  font-weight: 700;
+.title {
+  font-size: 36px;
+  font-weight: bold;
   line-height: 60px;
+}
+.title_fz43 {
+  font-size: 43px;
+  font-weight: 700;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
 }
 .title_fz16 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 24px;
+}
+
+.btn {
+  padding: 12px 25px 12px 25px;
+  height: 45px;
+  background: #FFA501;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sidepanel {
+  position: fixed;
+  top: 160px;
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 340px;
+  z-index: 2;
+}
+.sidepanel__divider {
+  width: 2px;
+  height: 70px;
+  background-color: #000;
+}
+.sidepanel__text {
+  height: 150px;
+  width: 25px;
+  color: #000;
+}
+.sidepanel__text span {
+  display: block;
+  -webkit-transform: rotate(-90deg) translate(-14%, -267%);
+          transform: rotate(-90deg) translate(-14%, -267%);
+  width: 150px;
+}
+.sidepanel__link {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.sidepanel__link img {
+  width: 25px;
+  height: 25px;
+}
+.sidepanel__link_linkedin img {
+  width: 32px;
+  height: 32px;
 }
 
 * {
