@@ -28,11 +28,18 @@
         img {
             width: 25px;
             height: 25px;
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
         }
         &_linkedin {
             img {
                 width: 32px;
                 height: 32px;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
