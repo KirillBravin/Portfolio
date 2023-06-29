@@ -2,14 +2,22 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
-    &_fz43 {
-        font-size: 43px;
+    &_fz14 {
+        font-size: 14px;
         font-weight: 700;
-        text-decoration: dotted;
+        line-height: 14px;
     }
     &_fz16 {
         font-size: 16px;
         font-weight: 700; 
         line-height: 24px;
+    }
+    &_fz36 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &_fz43 {
+        font-size: 43px;
+        font-weight: 700;
     }
 }
