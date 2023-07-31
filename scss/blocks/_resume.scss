@@ -1,0 +1,78 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        grid-template-rows: repeat(2, minmax(130, auto));
+        grid-auto-rows: minmax(130, auto);
+        column-gap: 135px;
+        row-gap: 45px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $orange-color;
+                border-radius: 100%;
+                left: -4%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: -42px;
+                    background-color: black;
+                }
+            }
+        }
+    }
+    &__item {
+        &-header {
+            position: relative;
+            padding: 45px 0 0 70px;
+            h4 {
+                margin-bottom: 5px;
+            }
+        }
+        &-body {
+            padding-top: 12px;
+        }
+        &-icon {
+            position: absolute;
+            top: 65px;
+            left: 22px;
+            @include before_circle;
+            &:before {
+                top: -50%;
+                left: -16px;
+            }
+            &:after {
+                content: '';
+                width: 47px;
+                height: 1px;
+                position: absolute;
+                top: 6px;
+                left: -63px;
+                background-color: black;
+            }
+            &-one-line {
+                top: 53px;
+            }
+        }
+    }
+}

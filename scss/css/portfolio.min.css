@@ -1,0 +1,12 @@
+.portfolio {
+  padding-top: 120px;
+}
+.portfolio__title {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding-left: 12px;
+}
+.portfolio__subtitle {
+  text-align: center;
+}/*# sourceMappingURL=portfolio.min.css.map */

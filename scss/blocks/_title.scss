@@ -2,6 +2,11 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
+    &_fz12 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: normal;
+    }
     &_fz14 {
         font-size: 14px;
         font-weight: 700;
@@ -12,6 +17,11 @@
         font-weight: 700; 
         line-height: 24px;
     }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+    }
     &_fz36 {
         font-size: 36px;
         font-weight: 700;
@@ -19,5 +29,20 @@
     &_fz43 {
         font-size: 43px;
         font-weight: 700;
+    }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding-left: 12px;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
     }
 }
