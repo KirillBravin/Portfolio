@@ -588,7 +588,7 @@ progress {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("/img/promo_bg.png") no-repeat 50%/cover;
+  background: url(../img/Promo_bg.png) no-repeat 50%/cover;
   padding-top: 205px;
 }
 .promo__title {
